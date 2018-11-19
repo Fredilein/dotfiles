@@ -41,10 +41,26 @@ call plug#begin('~/.vim/plugged')
 
 " Initialize plugin system
 
+
+
+" Functional
 Plug 'scrooloose/nerdtree'
-Plug 'itchyny/lightline.vim'
-Plug 'junegunn/vim-easy-align'
 Plug 'valloric/youcompleteme'
+
+" Commands
+Plug 'junegunn/vim-easy-align'
+Plug 'tpope/vim-commentary'
+
+" Optical
+" Plug 'itchyny/lightline.vim'
+Plug 'edkolev/tmuxline.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+" Themes
+Plug 'noah/vim256-color'
+Plug 'cocopon/iceberg.vim'
+Plug 'nightsense/carbonized'
 
 call plug#end()
 
@@ -55,6 +71,10 @@ call plug#end()
 "
 syntax enable
 " set number
+
+colorscheme iceberg
+
+
 
 :set number relativenumber
 
@@ -68,9 +88,8 @@ syntax enable
 set mouse=a
 :set hidden     "can navigate away from file
 
-set background=dark
-
-hi Visual guibg=#DDDDDD guifg=Black
+" set background=dark
+" hi Visual guibg=#DDDDDD guifg=Black
 
 :set shiftwidth=4 softtabstop=4 expandtab
 
@@ -103,6 +122,11 @@ nnoremap gj j
 map <C-n> :NERDTreeToggle<CR>
 
 " --- vim-airline ---
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+let g:airline_theme='luna'
+
+" --- vim-lightline ---
 set laststatus=2
 set noshowmode
 let g:lightline = {
