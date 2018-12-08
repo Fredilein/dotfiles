@@ -2,57 +2,30 @@
 " VIMRC
 "
 " Specify a directory for plugins
-" - For Neovim: ~/.local/share/nvim/plugged
-" - Avoid using standard Vim directory names like 'plugin'
+" - ~/.vim/plugged/
 
 :filetype plugin on
 
+
+"
+" ===== Plug =====
+" 
 call plug#begin('~/.vim/plugged')
-
-" Make sure you use single quotes
-
-" Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
-" Plug 'junegunn/vim-easy-align'
-
-" Any valid git URL is allowed
-" Plug 'https://github.com/junegunn/vim-github-dashboard.git'
-
-" Multiple Plug commands can be written in a single line using | separators
-" Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-
-" On-demand loading
-" Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-" Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
-
-" Using a non-master branch
-" Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
-
-" Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
-" Plug 'fatih/vim-go', { 'tag': '*' }
-
-" Plugin options
-" Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
-
-" Plugin outside ~/.vim/plugged with post-update hook
-" Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-
-" Unmanaged plugin (manually installed and updated)
-" Plug '~/my-prototype-plugin'
-
-" Initialize plugin system
-
-
 
 " Functional
 Plug 'scrooloose/nerdtree'
 Plug 'valloric/youcompleteme'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
+Plug 'junegunn/fzf.vim'
+Plug 'prettier/vim-prettier', { 'do': 'npm install' }
+Plug 'tpope/vim-fugitive'
 
 " Commands
 Plug 'junegunn/vim-easy-align'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
 
 " Optical
-" Plug 'itchyny/lightline.vim'
 Plug 'edkolev/tmuxline.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -61,6 +34,9 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'noah/vim256-color'
 Plug 'cocopon/iceberg.vim'
 Plug 'nightsense/carbonized'
+
+" Unused
+" Plug 'itchyny/lightline.vim'
 
 call plug#end()
 
@@ -73,8 +49,6 @@ syntax enable
 " set number
 
 colorscheme iceberg
-
-
 
 :set number relativenumber
 
@@ -91,7 +65,7 @@ set mouse=a
 " set background=dark
 " hi Visual guibg=#DDDDDD guifg=Black
 
-:set shiftwidth=4 softtabstop=4 expandtab
+:set shiftwidth=2 softtabstop=2 expandtab
 
 
 "
@@ -113,11 +87,12 @@ nnoremap j gj
 nnoremap gj j
 
 
+
 "
 " ===== Plugins =====
 "
 " --- NERDTree ---
-" let mapleader = ","
+let mapleader = ","
 " map <leader>ne :NERDTreeToggle<CR>
 map <C-n> :NERDTreeToggle<CR>
 
@@ -139,3 +114,7 @@ xmap ga <Plug>(EasyAlign)
 
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
+
+" -- fzf --
+" map ; :Files<CR>
+map <leader>f :Files<CR>
