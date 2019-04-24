@@ -142,6 +142,8 @@ alias sz="source .zshrc"
 
 alias neovim="~/.run/nvim-osx64/bin/nvim"
 
+alias b="buku --suggest"
+alias ddg="ddgr -n 8"
 
 
 vim_ins_mode="I"
@@ -176,3 +178,5 @@ export NVM_DIR="$HOME/.nvm"
 
 source $HOME/.dotfiles/sh/fzf.sh
 . $HOME/.run/z.sh
+
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
