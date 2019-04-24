@@ -90,6 +90,7 @@ nmap <Leader>w <Plug>(easymotion-overwin-w)
 nmap ' :Denite buffer -split=floating<CR>
 nmap <leader>f :Denite file/rec -split=floating<CR>
 nnoremap <leader>g :<C-u>Denite grep:. -no-empty -mode=normal<CR>
+" ==> Floating windows coming with nvim 0.4!
 
 
 " --- Coc ---
