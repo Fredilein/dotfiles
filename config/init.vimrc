@@ -2,7 +2,7 @@ call plug#begin('~/.config/nvim/plugged')
 
 " File Navigation
 Plug 'scrooloose/nerdtree'
-Plug '/usr/local/opt/fzf'						" brew installation
+Plug '/usr/local/opt/fzf'	      " brew installation
 Plug 'junegunn/fzf.vim'
 
 " tpope
