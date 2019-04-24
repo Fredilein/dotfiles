@@ -140,6 +140,8 @@ alias wttr="curl wttr.in/Zurich"
 
 alias sz="source .zshrc"
 
+alias neovim="~/.run/nvim-osx64/bin/nvim"
+
 
 
 vim_ins_mode="I"
@@ -173,4 +175,4 @@ export NVM_DIR="$HOME/.nvm"
 
 
 source $HOME/.dotfiles/sh/fzf.sh
-. $HOME/.dotfiles/sh/z.sh
+. $HOME/.run/z.sh
