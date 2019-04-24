@@ -16,9 +16,9 @@ set backspace=indent,eol,start
 
 " lines on top/bottom
 set so=5										
-"
+
 " do not wrap long lines by default
-set nowrap
+" set nowrap
 
 " Set to auto read when a file is changed from the outside
 set autoread				    
