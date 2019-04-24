@@ -138,6 +138,8 @@ alias gritt="/Users/adi/Documents/Code/Rust/grit/target/debug/grit"
 
 alias wttr="curl wttr.in/Zurich"
 
+alias sz="source .zshrc"
+
 
 
 vim_ins_mode="I"
@@ -170,5 +172,5 @@ export NVM_DIR="$HOME/.nvm"
   [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 
 
-source ~/.run/fzf.sh
-. ~/.run/z.sh
+source $HOME/.dotfiles/sh/fzf.sh
+. $HOME/.dotfiles/sh/z.sh
