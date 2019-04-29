@@ -23,7 +23,7 @@ Plug 'Shougo/denite.nvim'
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 
 " Optical
-Plug 'edkolev/tmuxline.vim'
+" Plug 'edkolev/tmuxline.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
@@ -36,6 +36,7 @@ Plug 'nightsense/carbonized'
 Plug 'rakr/vim-two-firewatch'
 Plug 'rakr/vim-togglebg'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
+Plug 'ayu-theme/ayu-vim'
 
 " Languages
 Plug 'pangloss/vim-javascript'

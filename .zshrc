@@ -29,7 +29,7 @@ ZSH_THEME="spaceship"
 # export UPDATE_ZSH_DAYS=13
 
 # Uncomment the following line to disable colors in ls.
-DISABLE_LS_COLORS="true"
+# DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
@@ -109,6 +109,8 @@ source $ZSH/oh-my-zsh.sh
 
 # ---- Own Config begins here ----
 
+export EDITOR='nvim'
+
 
 source ~/.zsh_profile
 
@@ -180,3 +182,11 @@ source $HOME/.dotfiles/sh/fzf.sh
 . $HOME/.run/z.sh
 
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="/usr/local/lib/ruby/gems/2.6.0/bin:$PATH"
+
+source ~/.bin/tmuxinator.zsh
