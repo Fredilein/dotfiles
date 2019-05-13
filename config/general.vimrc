@@ -34,7 +34,7 @@ set cmdheight=1
 set noshowcmd
 
 " Yank and paste with the system clipboard
-set clipboard=unnamed
+" set clipboard=unnamed
 
 " === TAB/Space settings === "
 " Insert spaces when TAB is pressed.

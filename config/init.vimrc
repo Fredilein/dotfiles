@@ -45,5 +45,7 @@ Plug 'mattn/emmet-vim'
 Plug 'rust-lang/rust.vim'
 Plug 'shime/vim-livedown'
 Plug 'plasticboy/vim-markdown'
+Plug 'posva/vim-vue'
+Plug 'wavded/vim-stylus'
 
 call plug#end()

@@ -8,6 +8,11 @@ nmap <silent> ]b :bnext<CR>
 nmap <silent> [B :bfirst<CR>
 nmap <silent> ]B :blast<CR>
 
+"switch tabs
+map <leader>t :tabs<CR>
+nmap <silent> [t :tabp<CR>
+nmap <silent> ]t :tabn<CR>
+
 " quickfix list
 map <leader>c :copen<CR>
 nmap <silent> [c :cprev<CR>
@@ -122,6 +127,10 @@ function! s:show_documentation()
     call CocAction('doHover')
   endif
 endfunction
+
+" Format
+vmap <leader>p  <Plug>(coc-format-selected)
+nmap <leader>p  <Plug>(coc-format-selected)
 
 " Remap for rename current word
 nmap <leader>rn <Plug>(coc-rename)
