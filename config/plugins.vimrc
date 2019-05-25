@@ -147,3 +147,6 @@ augroup mygroup
 augroup end
 
 
+" --- previm ---
+
+let g:previm_open_cmd = 'open -a Safari'

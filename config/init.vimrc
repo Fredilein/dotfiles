@@ -47,5 +47,6 @@ Plug 'shime/vim-livedown'
 Plug 'plasticboy/vim-markdown'
 Plug 'posva/vim-vue'
 Plug 'wavded/vim-stylus'
+Plug 'previm/previm'
 
 call plug#end()
