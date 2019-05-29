@@ -8,6 +8,12 @@ nmap <silent> ]b :bnext<CR>
 nmap <silent> [B :bfirst<CR>
 nmap <silent> ]B :blast<CR>
 
+"Tab to switch to next open buffer
+nnoremap <Tab> :bnext<cr>
+"Shift + Tab to switch to previous open buffer
+nnoremap <S-Tab> :bprevious<cr>
+
+
 "switch tabs
 map <leader>t :tabs<CR>
 nmap <silent> [t :tabp<CR>
@@ -39,6 +45,7 @@ inoremap {<CR> {<CR>}<ESC>O
 " map <leader>s :source ~/.vimrc<CR>
 map <leader>s :source ~/.config/nvim/init.vim<CR>
 map <leader>m :make build<CR>
+map <leader>w :w<CR>
 
 
 "
@@ -81,8 +88,8 @@ map <Leader>L <Plug>(easymotion-bd-jk)
 nmap <Leader>L <Plug>(easymotion-overwin-line)
 
 " Move to word
-map  <Leader>w <Plug>(easymotion-bd-w)
-nmap <Leader>w <Plug>(easymotion-overwin-w)
+" map  <Leader>w <Plug>(easymotion-bd-w)
+" nmap <Leader>w <Plug>(easymotion-overwin-w)
 
 
 " --- Denite ---
