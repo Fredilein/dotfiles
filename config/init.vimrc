@@ -5,9 +5,10 @@ Plug 'scrooloose/nerdtree'
 Plug '/usr/local/opt/fzf'	      " brew installation
 Plug 'junegunn/fzf.vim'
 
-" tpope
+" Functional
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
+Plug 'mbbill/undotree'
 
 " Commands
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }

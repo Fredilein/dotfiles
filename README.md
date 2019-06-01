@@ -6,4 +6,4 @@ Personal config files for:
 - zsh
 
 ## Info
-`.vimrc` is not in use anymore. Since I switched to neovim, every vim related config is in the `config` folder (and splitted across various files).
+`.vimrc` is not in use anymore. Since I switched to neovim, every vim related config is in the `config` folder.

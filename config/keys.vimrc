@@ -152,3 +152,7 @@ nmap <leader>ac  <Plug>(coc-codeaction)
 " Fix autofix problem of current line
 nmap <leader>qf  <Plug>(coc-fix-current)
 
+
+" --- undotree ---
+
+nnoremap <leader>u :UndotreeToggle<cr>
