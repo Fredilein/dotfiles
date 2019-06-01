@@ -46,6 +46,7 @@ inoremap {<CR> {<CR>}<ESC>O
 map <leader>s :source ~/.config/nvim/init.vim<CR>
 map <leader>m :make build<CR>
 map <leader>w :w<CR>
+map <leader>h :nohl<CR>
 
 
 "

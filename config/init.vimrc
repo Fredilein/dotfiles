@@ -37,6 +37,7 @@ Plug 'rakr/vim-two-firewatch'
 Plug 'rakr/vim-togglebg'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'ayu-theme/ayu-vim'
+Plug 'morhetz/gruvbox'
 
 " Languages
 Plug 'pangloss/vim-javascript'
