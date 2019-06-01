@@ -145,3 +145,10 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/usr/local/lib/ruby/gems/2.6.0/bin:$PATH"
 
 source ~/.bin/tmuxinator.zsh
+
+
+# Load Git completion
+zstyle ':completion:*:*:git:*' script ~/.dotfiles/.zsh/git-completion.bash
+fpath=(~/.dotfiles/.zsh $fpath)
+
+autoload -Uz compinit && compinit
