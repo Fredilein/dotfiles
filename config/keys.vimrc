@@ -9,9 +9,9 @@ nmap <silent> [B :bfirst<CR>
 nmap <silent> ]B :blast<CR>
 
 "Tab to switch to next open buffer
-nnoremap <Tab> :bnext<cr>
+nnoremap <silent> <Tab> :bnext<cr>
 "Shift + Tab to switch to previous open buffer
-nnoremap <S-Tab> :bprevious<cr>
+nnoremap <silent> <S-Tab> :bprevious<cr>
 
 
 "switch tabs
@@ -46,7 +46,7 @@ inoremap {<CR> {<CR>}<ESC>O
 map <leader>s :source ~/.config/nvim/init.vim<CR>
 map <leader>m :make build<CR>
 map <leader>w :w<CR>
-map <leader>h :nohl<CR>
+map <silent> <leader>h :nohl<CR>
 
 
 "
