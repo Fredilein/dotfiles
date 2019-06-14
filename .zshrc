@@ -102,6 +102,7 @@ alias neovim="~/.run/nvim-osx64/bin/nvim"
 alias b="buku --suggest"
 alias ddg="ddgr -n 8"
 
+alias bd=". bd -si"
 
 vim_ins_mode="I"
 vim_cmd_mode="N"
