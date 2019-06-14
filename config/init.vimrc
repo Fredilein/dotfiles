@@ -31,7 +31,6 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'junegunn/goyo.vim'
 
 " Themes
-Plug 'noah/vim256-color'
 Plug 'cocopon/iceberg.vim'
 Plug 'nightsense/carbonized'
 Plug 'rakr/vim-two-firewatch'
@@ -39,6 +38,7 @@ Plug 'rakr/vim-togglebg'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'ayu-theme/ayu-vim'
 Plug 'morhetz/gruvbox'
+Plug 'challenger-deep-theme/vim', { 'name': 'challenger-deep' }
 
 " Languages
 Plug 'pangloss/vim-javascript'
