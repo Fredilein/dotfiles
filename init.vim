@@ -3,3 +3,4 @@ source $HOME/.config/nvim/config/general.vimrc
 source $HOME/.config/nvim/config/plugins.vimrc
 source $HOME/.config/nvim/config/theme.vimrc
 source $HOME/.config/nvim/config/keys.vimrc
+source $HOME/.config/nvim/config/statusline.vimrc
