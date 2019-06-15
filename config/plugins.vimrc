@@ -44,7 +44,7 @@ let g:EasyMotion_smartcase = 1
 "   --glob:  Include or exclues files for searching that match the given glob
 "            (aka ignore .git files)
 "
-call denite#custom#var('file/rec', 'command', ['rg', '--files', '--glob', '!.git'])
+call denite#custom#var('file/rec', 'command', ['rg', '--files', '--hidden', '--glob', '!.git'])
 
 " Use ripgrep in place of 'grep'
 call denite#custom#var('grep', 'command', ['rg'])
@@ -102,7 +102,7 @@ catch
   echo 'Denite not installed. It should work after running :PlugInstall'
 endtry
 
-" https://github.com/sodiumjoe/dotfiles/blob/master/vimrc#L179<Paste>
+" https://github.com/sodiumjoe/dotfiles/blob/master/vimrc#L179
 call denite#custom#map('insert', '<C-v>', '<denite:do_action:vsplit>',
       \'noremap')
 call denite#custom#map('normal', '<C-v>', '<denite:do_action:vsplit>',
@@ -110,6 +110,10 @@ call denite#custom#map('normal', '<C-v>', '<denite:do_action:vsplit>',
 call denite#custom#map('insert', '<C-s>', '<denite:do_action:split>',
       \'noremap')
 call denite#custom#map('normal', '<C-s>', '<denite:do_action:split>',
+  \'noremap')
+call denite#custom#map('insert', '<C-t>', '<denite:do_action:tabopen>',
+      \'noremap')
+call denite#custom#map('normal', '<C-t>', '<denite:do_action:tabopen>',
   \'noremap')
 
 call denite#custom#map(
