@@ -1,5 +1,7 @@
 # Dotfiles
 
+![Screenshot](/img/config_screenshot.png)
+
 Personal config files for:
 - nvim
 - tmux
