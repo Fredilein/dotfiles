@@ -7,15 +7,12 @@
 # 
 #                                            ~ Adi
 
-# Path to your oh-my-zsh installation.
 export ZSH="/Users/adi/.oh-my-zsh"
 
 ZSH_THEME="spaceship"
 
-# Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
   osx
@@ -28,51 +25,28 @@ plugins=(
   dircycle
 )
 
-source $ZSH/oh-my-zsh.sh
-
-# User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='nvim'
+fi
 
 
+# === SOURCES ===
 
-
-# ---- Own Config begins here ----
-
-export EDITOR='nvim'
-
-
+source $ZSH/oh-my-zsh.sh
 source ~/.zsh_profile
 
-# alias ls="colorls -1"
-# alias lsa="colorls -lA --sd"
-# alias lst="colorls --tree"
-# alias lsl="colorls -1A"
+source ~/.config/.purepower
+
+source $HOME/.dotfiles/sh/fzf.sh
+
+source ~/.bin/tmuxinator.zsh
+
+
+# === ALIASES ===
+
 alias lsa="ls -la"
 alias lsl="ls -l"
 
@@ -104,6 +78,9 @@ alias ddg="ddgr -n 8"
 
 alias bd=". bd -si"
 
+# === commandline insert/normal mode ===
+# (currently not in use as zsh vim mode breaks stuff)
+
 vim_ins_mode="I"
 vim_cmd_mode="N"
 vim_mode=$vim_ins_mode
@@ -126,18 +103,12 @@ function TRAPINT() {
 }
 
 
-source ~/.config/.purepower
-
-eval $(thefuck --alias)
+# === EXPORTS ===
 
 export NVM_DIR="$HOME/.nvm"
   [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 
 
-source $HOME/.dotfiles/sh/fzf.sh
-. $HOME/.run/z.sh
-
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
@@ -145,11 +116,20 @@ export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/usr/local/lib/ruby/gems/2.6.0/bin:$PATH"
 
-source ~/.bin/tmuxinator.zsh
 
+# === PROGRAMS ===
+
+eval $(thefuck --alias)
+
+. $HOME/.run/z.sh
+
+
+# === AUTO COMPLETION ===
 
 # Load Git completion
 zstyle ':completion:*:*:git:*' script ~/.dotfiles/.zsh/git-completion.bash
 fpath=(~/.dotfiles/.zsh $fpath)
+
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 autoload -Uz compinit && compinit
