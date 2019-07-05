@@ -56,7 +56,7 @@ let g:lightline = {}
 let g:lightline.colorscheme = 'challenger_deep'
 let g:lightline.active = { 
       \ 'left': [ ['mode', 'readonly'], ['filename_with_icon', 'modified' ] ],
-      \ 'right': [ ['lineinfo'], ['testing_status', 'status_diagnostic'] ]
+      \ 'right': [ ['lineinfo'], ['testing_status', 'status_diagnostic'], ['git_branch'] ]
       \ }
 let g:lightline.separator = { 'left': "\ue0b8", 'right': "\ue0be " }
 let g:lightline.subseparator = { 'left': "\ue0b9", 'right': "\ue0b9" }
@@ -89,7 +89,7 @@ let g:lightline.tab_component_function = {
 
 let g:lightline.component = {
         \ 'filename_with_icon': '%{FileNameWithIcon()}',
-        \ 'lineinfo': "%2{Line_percent()}\uf295 %3{Line_num()}:%-2{Col_num()}",
+        \ 'lineinfo': "%2{Line_percent()}\uf295 %3{Line_num()}:%-2{Col_num()}",
         \ 'vim_logo': "\ue7c5",
         \ 'git_branch': '%{Git_branch()}',
         \ 'filename_with_parent': '%t',
