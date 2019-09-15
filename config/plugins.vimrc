@@ -159,3 +159,13 @@ augroup end
 " --- previm ---
 
 let g:previm_open_cmd = 'open -a Safari'
+
+
+" --- vim-table-mode ---
+
+let g:table_mode_corner='|'
+
+
+" --- vim-wiki ---
+let g:vimwiki_list = [{'path': '~/Documents/Sec/Notes',
+                      \ 'syntax': 'markdown', 'ext': '.md'}]

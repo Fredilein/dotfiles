@@ -17,6 +17,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'machakann/vim-sandwich'
 Plug 'easymotion/vim-easymotion'
+Plug 'dhruvasagar/vim-table-mode'
 
 " Code Completion
 Plug 'honza/vim-snippets'
@@ -51,5 +52,7 @@ Plug 'plasticboy/vim-markdown'
 Plug 'posva/vim-vue'
 Plug 'wavded/vim-stylus'
 Plug 'previm/previm'
+
+Plug 'vimwiki/vimwiki'
 
 call plug#end()

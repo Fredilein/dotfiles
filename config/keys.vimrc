@@ -156,3 +156,7 @@ nmap <leader>qf  <Plug>(coc-fix-current)
 " --- undotree ---
 
 nnoremap <leader>u :UndotreeToggle<cr>
+
+
+" --- vim-table-mode ---
+nnoremap <leader>tm :TableModeToggle<CR>

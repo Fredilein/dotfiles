@@ -15,7 +15,7 @@ set hidden
 set backspace=indent,eol,start
 
 " lines on top/bottom
-set so=5										
+set so=4
 
 " do not wrap long lines by default
 " set nowrap
