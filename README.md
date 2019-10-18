@@ -38,6 +38,20 @@ There is a minimal `.tmux.conf` and `.vimrc` for use in VMs etc.
 - **Magnet**: Window manager lite
 - **BetterTouchTool**: BetterTouchBar and much more
 
+### Firefox Extensions
+- **LibreFox**
+- **CanvasBlocker**
+- **Cookie AutoDelete**
+- **First Party Isolation**
+- **FoxyProxy**
+- **I don't care about cookies**
+- **Octotree**: Github file tree
+- **Privacy Badger**
+- **ToS Didn't read**
+- **uBlock Origin**
+- **uMatrix**
+- **Vimium**
+
 
 ## Sources
 Theme and some of the tmux config is from [this reddit post](https://www.reddit.com/r/vimporn/comments/bxjd4p/cant_q_tinkering/).
