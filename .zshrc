@@ -11,6 +11,10 @@ export ZSH="/Users/adi/.oh-my-zsh"
 
 ZSH_THEME="spaceship"
 
+
+
+export LC_ALL=en_US.UTF-8
+
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 plugins=(
