@@ -2,6 +2,8 @@
 
 ![Screenshot](/img/config_screenshot.png)
 
+![Screenshot](/img/touchbar_screenshot.png)
+
 Personal config files for:
 - neovim
 - tmux

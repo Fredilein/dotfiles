@@ -82,6 +82,7 @@ alias ddg="ddgr -n 8"
 
 alias bd=". bd -si"
 
+
 # === commandline insert/normal mode ===
 # (currently not in use as zsh vim mode breaks stuff)
 
@@ -111,8 +112,6 @@ function TRAPINT() {
 
 export NVM_DIR="$HOME/.nvm"
   [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-
-
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
