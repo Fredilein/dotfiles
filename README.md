@@ -11,6 +11,10 @@ Personal config files for:
 
 There is a minimal `.tmux.conf` and `.vimrc` for use in VMs etc.
 
+## iTerm
+- Font: Hack Regular Nerd Font
+- Colorscheme: [Challenger Deep](https://github.com/challenger-deep-theme) 
+
  
 ## Some installed Tools
 
