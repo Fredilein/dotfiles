@@ -5,14 +5,14 @@ Plug 'scrooloose/nerdtree'
 Plug '/usr/local/opt/fzf'	      " brew installation
 Plug 'junegunn/fzf.vim'
 
-" Functional
+" Tools
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
 Plug 'mbbill/undotree'
 
 " Commands
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-Plug 'godlygeek/tabular'
+" Plug 'godlygeek/tabular'
 Plug 'junegunn/vim-easy-align'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'machakann/vim-sandwich'
@@ -21,14 +21,14 @@ Plug 'dhruvasagar/vim-table-mode'
 
 " Code Completion
 Plug 'honza/vim-snippets'
-Plug 'Shougo/denite.nvim'
+" Plug 'Shougo/denite.nvim'
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 
 " Optical
 " Plug 'edkolev/tmuxline.vim'
 " Plug 'vim-airline/vim-airline'
 Plug 'itchyny/lightline.vim'
-Plug 'vim-airline/vim-airline-themes'
+" Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
 Plug 'junegunn/goyo.vim'
 
