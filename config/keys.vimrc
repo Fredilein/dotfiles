@@ -45,7 +45,6 @@ inoremap {<CR> {<CR>}<ESC>O
 " map <leader>s :source ~/.vimrc<CR>
 map <leader>s :source ~/.config/nvim/init.vim<CR>
 map <leader>m :make build<CR>
-map <leader>w :w<CR>
 map <silent> <leader>h :nohl<CR>
 
 
@@ -100,9 +99,9 @@ nmap <Leader>L <Plug>(easymotion-overwin-line)
 "   <leader>g - Search current directory for occurences of given term and
 "   close window if no results
 "   <leader>j - Search current directory for occurences of word under cursor
-nmap ' :Denite buffer -split=floating<CR>
-nmap <leader>f :Denite file/rec -split=floating<CR>
-nnoremap <leader>g :<C-u>Denite grep:. -no-empty -mode=normal<CR>
+" nmap ' :Denite buffer -split=floating<CR>
+" nmap <leader>f :Denite file/rec -split=floating<CR>
+" nnoremap <leader>g :<C-u>Denite grep:. -no-empty -mode=normal<CR>
 " ==> Floating windows coming with nvim 0.4!
 
 
@@ -160,3 +159,15 @@ nnoremap <leader>u :UndotreeToggle<cr>
 
 " --- vim-table-mode ---
 nnoremap <leader>tm :TableModeToggle<CR>
+
+
+" --- vim-fzf ---
+let g:fzf_action = {
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-s': 'split',
+  \ 'ctrl-v': 'vsplit' }
+nmap ' :Buffers<CR>
+nmap <leader>f :Files<CR>
+nmap <leader>g :Rg<CR>
+nmap <leader>w :Windows<CR>
+nmap <leader>i :Commits<CR>

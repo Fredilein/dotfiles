@@ -169,3 +169,13 @@ let g:table_mode_corner='|'
 " --- vim-wiki ---
 let g:vimwiki_list = [{'path': '~/Documents/Sec/Notes',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
+
+" --- vim-fzf ---
+function! s:fzf_statusline()
+  " Override statusline as you like
+  " Doesn't really work tho lol
+  highlight fzf1 ctermfg=black ctermbg=cyan
+  setlocal statusline=%#fzf1#\ \ \ FUZZY 
+endfunction
+
+autocmd! User FzfStatusLine call <SID>fzf_statusline()
