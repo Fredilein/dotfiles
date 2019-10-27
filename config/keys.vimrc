@@ -136,8 +136,8 @@ function! s:show_documentation()
 endfunction
 
 " Format
-vmap <leader>p  <Plug>(coc-format-selected)
-nmap <leader>p  <Plug>(coc-format-selected)
+" vmap <leader>p  <Plug>(coc-format-selected)
+" nmap <leader>p  <Plug>(coc-format-selected)
 
 " Remap for rename current word
 nmap <leader>rn <Plug>(coc-rename)
@@ -171,3 +171,7 @@ nmap <leader>f :Files<CR>
 nmap <leader>g :Rg<CR>
 nmap <leader>w :Windows<CR>
 nmap <leader>i :Commits<CR>
+
+
+" --- vim-prettier ---
+
