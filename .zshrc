@@ -82,6 +82,8 @@ alias ddg="ddgr -n 8"
 
 alias bd=". bd -si"
 
+alias gs="vim '+Gedit:'"
+
 
 # === commandline insert/normal mode ===
 # (currently not in use as zsh vim mode breaks stuff)
