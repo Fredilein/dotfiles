@@ -173,5 +173,5 @@ nmap <leader>w :Windows<CR>
 nmap <leader>i :Commits<CR>
 
 
-" --- vim-prettier ---
-
+" --- Vista.vim ---
+nmap <leader>v :Vista coc<CR>

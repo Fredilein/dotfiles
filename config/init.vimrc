@@ -4,6 +4,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'scrooloose/nerdtree'
 Plug '/usr/local/opt/fzf'	      " brew installation
 Plug 'junegunn/fzf.vim'
+Plug 'liuchengxu/vista.vim'
 
 " Tools
 Plug 'tpope/vim-fugitive'
