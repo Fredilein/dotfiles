@@ -168,10 +168,20 @@ let g:fzf_action = {
   \ 'ctrl-v': 'vsplit' }
 nmap ' :Buffers<CR>
 nmap <leader>f :GFiles<CR>
-nmap <leader>g :Rg<CR>
+nmap <leader>/ :Rg<CR>
 nmap <leader>w :Windows<CR>
 nmap <leader>i :Commits<CR>
 
 
 " --- Vista.vim ---
 nmap <leader>v :Vista coc<CR>
+
+" --- vim-fugitive ---
+nmap <leader>gs :Gstatus<CR>
+nmap <leader>gp :Gpush<CR>
+nmap <leader>gl :Gpull<CR>
+nmap <leader>ge :Gedit<CR>
+nmap <leader>gd :Gdiffsplit<CR>
+nmap <leader>glg :Glog<CR>
+nmap <leader>ga :Gwrite<CR>
+nmap <leader>gc :Gcommit<CR>
