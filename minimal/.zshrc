@@ -15,7 +15,7 @@ fi
 # === SOURCES ===
 
 source ~/.zsh_profile
-source $HOME/.dotfiles/sh/fzf.sh
+source $HOME/.dotfiles/scripts/fzf.sh
 
 
 # === ALIASES ===

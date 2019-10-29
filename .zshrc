@@ -44,7 +44,7 @@ source ~/.zsh_profile
 
 source ~/.config/.purepower
 
-source $HOME/.dotfiles/sh/fzf.sh
+source $HOME/.dotfiles/scripts/fzf.sh
 
 source ~/.bin/tmuxinator.zsh
 
