@@ -167,7 +167,7 @@ let g:fzf_action = {
   \ 'ctrl-s': 'split',
   \ 'ctrl-v': 'vsplit' }
 nmap ' :Buffers<CR>
-nmap <leader>f :Files<CR>
+nmap <leader>f :GFiles<CR>
 nmap <leader>g :Rg<CR>
 nmap <leader>w :Windows<CR>
 nmap <leader>i :Commits<CR>
