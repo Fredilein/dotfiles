@@ -32,6 +32,7 @@ Plug 'itchyny/lightline.vim'
 " Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
 Plug 'junegunn/goyo.vim'
+Plug 'psliwka/vim-smoothie'
 
 " Themes
 Plug 'cocopon/iceberg.vim'

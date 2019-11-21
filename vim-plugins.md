@@ -110,3 +110,6 @@ Distraction free writing. Toggle with `:Goyo`.
 [Github](https://github.com/shime/vim-livedown)
 Live markdown preview.
 
+### Vim-Smoothie
+[Github](https://github.com/psliwka/vim-smoothie)
+Smooth scrolling when pressing `^D`, `^U`, `^F`, `^B`
