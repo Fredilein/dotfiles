@@ -84,6 +84,8 @@ alias bd=". bd -si"
 
 alias gs="vim '+Gedit:'"
 
+alias prp="pipenv run python3"
+
 
 # === commandline insert/normal mode ===
 # (currently not in use as zsh vim mode breaks stuff)
