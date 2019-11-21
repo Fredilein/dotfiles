@@ -49,3 +49,7 @@ set shiftwidth=2
 if has('nvim')
   set inccommand=split
 endif
+
+
+" Language specific settings
+autocmd Filetype py setlocal expandtab shiftwidth=4 softtabstop=4
