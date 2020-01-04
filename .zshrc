@@ -86,6 +86,8 @@ alias gs="vim '+Gedit:'"
 
 alias prp="pipenv run python3"
 
+alias c="clear"
+
 
 # === commandline insert/normal mode ===
 # (currently not in use as zsh vim mode breaks stuff)
@@ -122,6 +124,8 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/usr/local/lib/ruby/gems/2.6.0/bin:$PATH"
+
+# export FZF_DEFAULT_COMMAND='rg --hidden --ignore-file .git -l ""' 
 
 
 # === PROGRAMS ===
