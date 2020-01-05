@@ -55,6 +55,6 @@ Plug 'posva/vim-vue'
 Plug 'wavded/vim-stylus'
 Plug 'previm/previm'
 
-Plug 'vimwiki/vimwiki'
+" Plug 'vimwiki/vimwiki'
 
 call plug#end()
