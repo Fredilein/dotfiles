@@ -217,3 +217,8 @@ function! FloatingFZF()
 
   call nvim_open_win(buf, v:true, opts)
 endfunction
+
+" --- vim-markdown ---
+let g:vim_markdown_math = 1
+set conceallevel=2
+let g:vim_markdown_new_list_item_indent = 0
