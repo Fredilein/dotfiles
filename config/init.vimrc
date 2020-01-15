@@ -12,7 +12,7 @@ Plug 'tpope/vim-commentary'
 Plug 'mbbill/undotree'
 
 " Commands
-Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+" Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 " Plug 'godlygeek/tabular'
 Plug 'junegunn/vim-easy-align'
 Plug 'christoomey/vim-tmux-navigator'

@@ -151,6 +151,8 @@ nmap <leader>ac  <Plug>(coc-codeaction)
 " Fix autofix problem of current line
 nmap <leader>qf  <Plug>(coc-fix-current)
 
+nmap <leader>p :CocCommand prettier.formatFile<CR>
+
 
 " --- undotree ---
 
