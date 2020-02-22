@@ -38,7 +38,6 @@ if type -p npm > /dev/null; then
 else
     echo "npm FAILED TO INSTALL!!!" >> $log_file
 fi
-npm install -g spaceship-prompt
 
 #==============
 # Give the user a summary of what has been installed
@@ -46,5 +45,5 @@ npm install -g spaceship-prompt
 echo -e "\n====== Summary ======\n"
 cat $log_file
 echo
-echo "Enjoy -Jarrod"
+echo "~ Fredilein"
 rm $log_file
