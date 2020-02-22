@@ -17,6 +17,8 @@ fi
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 echo "Vim Plug hopefully installed" >> $log_file
+mkdir --parents $HOME/.config/nvim/
+echo "source $HOME/.vimrc" >> $HOME/.config/nvim/init.vim
 
 sudo apt-get -y install curl
 if type -p curl > /dev/null; then
