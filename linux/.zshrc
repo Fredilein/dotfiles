@@ -72,6 +72,8 @@ alias gs="vim '+Gedit:'"
 
 alias prp="pipenv run python3"
 
+alias open="xdg-open"
+
 
 # === EXPORTS ===
 
