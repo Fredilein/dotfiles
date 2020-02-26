@@ -6,12 +6,11 @@
 # "`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-' 
 # 
 #                                            ~ Adi
-
-export ZSH="$HOME/.oh-my-zsh"
-
-ZSH_THEME="spaceship"
+#               ==== FOR LINUX ====
+#                             
 
 
+PROMPT='%F{red}%1~%f %# '
 
 export LC_ALL=en_US.UTF-8
 
@@ -31,12 +30,7 @@ fi
 
 # === SOURCES ===
 
-source $ZSH/oh-my-zsh.sh
-source ~/.zsh_profile
-
 source $HOME/.dotfiles/scripts/fzf.sh
-
-source ~/.bin/tmuxinator.zsh
 
 
 # === ALIASES ===
@@ -89,7 +83,7 @@ export PATH="/usr/local/lib/ruby/gems/2.6.0/bin:$PATH"
 
 # === PROGRAMS ===
 
-. $HOME/.run/z.sh
+. $HOME/.dotfiles/scripts/z.sh
 
 
 # === AUTO COMPLETION ===
@@ -97,8 +91,6 @@ export PATH="/usr/local/lib/ruby/gems/2.6.0/bin:$PATH"
 # Load Git completion
 zstyle ':completion:*:*:git:*' script ~/.dotfiles/.zsh/git-completion.bash
 fpath=(~/.dotfiles/.zsh $fpath)
-
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 autoload -Uz compinit && compinit
 
