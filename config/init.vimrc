@@ -55,6 +55,8 @@ Plug 'plasticboy/vim-markdown'
 Plug 'posva/vim-vue'
 Plug 'wavded/vim-stylus'
 Plug 'previm/previm'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
 
 " Plug 'vimwiki/vimwiki'
 
