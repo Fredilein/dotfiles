@@ -27,3 +27,9 @@ bip() {
     do; brew install $prog; done;
   fi
 }
+
+
+# fh - repeat history
+h() {
+  print -z $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | gsed -r 's/ *[0-9]*\*? *//' | gsed -r 's/\\/\\\\/g')
+}
