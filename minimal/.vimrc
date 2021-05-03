@@ -7,21 +7,9 @@ Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-commentary'
 
 " Commands
-Plug 'christoomey/vim-tmux-navigator'
 Plug 'machakann/vim-sandwich'
 Plug 'easymotion/vim-easymotion'
 
-" Code Completion
-Plug 'honza/vim-snippets'
-
-" Optical
-
-" Themes
-Plug 'cocopon/iceberg.vim'
-Plug 'morhetz/gruvbox'
-Plug 'challenger-deep-theme/vim', { 'name': 'challenger-deep' }
-
-" Languages
 
 call plug#end()
 
@@ -37,7 +25,6 @@ set foldcolumn=1
 
 " can navigate away from file
 set hidden										
-
 " make backspace work as expected
 set backspace=indent,eol,start
 
@@ -88,9 +75,6 @@ let g:EasyMotion_do_mapping = 0 " Disable default mappings
 
 " Turn on case-insensitive feature
 let g:EasyMotion_smartcase = 1
-
-
-colorscheme challenger_deep
 
 let mapleader = ","
 
