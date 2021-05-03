@@ -11,8 +11,8 @@ sudo rm -rf ~/.vimrc > /dev/null 2>&1
 sudo rm -rf ~/.bashrc > /dev/null 2>&1
 sudo rm -rf ~/.tmux.conf > /dev/null 2>&1
 
-echo "## install vim & tmux";
-sudo apt-get install vim tmux;
+echo "## install vim, tmux, curl";
+sudo apt-get install vim tmux curl;
 
 echo "## link vim & tmux conf";
 ln -s ~/.dotfiles/minimal/.vimrc ~;
