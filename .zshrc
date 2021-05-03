@@ -90,6 +90,9 @@ alias c="clear"
 
 alias grep="ggrep"
 
+alias python="$(brew --prefix)/opt/python@3.8/bin/python3"
+alias pip="$(brew --prefix)/opt/python@3.8/bin/pip3"
+
 # === commandline insert/normal mode ===
 # (currently not in use as zsh vim mode breaks stuff)
 
@@ -126,8 +129,11 @@ export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/usr/local/lib/ruby/gems/2.6.0/bin:$PATH"
 export PATH="/usr/local/Cellar/llvm/10.0.0_1/bin:$PATH"
+export PATH="/Users/adi/.composer/vendor/bin:$PATH"
 
 # export FZF_DEFAULT_COMMAND='rg --hidden --ignore-file .git -l ""' 
+export LDFLAGS="-L/usr/local/opt/libffi/lib"
+export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
 
 
 # === PROGRAMS ===
@@ -146,3 +152,19 @@ fpath=(~/.dotfiles/.zsh $fpath)
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 autoload -Uz compinit && compinit
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/adi/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/adi/opt/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/adi/opt/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/adi/opt/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
