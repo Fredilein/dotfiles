@@ -60,6 +60,8 @@ set softtabstop=2
 " Indentation amount for < and > commands.
 set shiftwidth=2
 
+set noswapfile
+
 if has('nvim')
   set inccommand=split
 endif
