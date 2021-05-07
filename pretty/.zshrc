@@ -12,6 +12,8 @@
 # ZSH_THEME="spaceship"
 
 
+eval "$(starship init zsh)"
+
 
 export LC_ALL=en_US.UTF-8
 
@@ -40,7 +42,7 @@ export LC_ALL=en_US.UTF-8
 # === SOURCES ===
 
 # source $ZSH/oh-my-zsh.sh
-source ~/.zsh_profile
+# source ~/.zsh_profile
 
 # source ~/.config/.purepower
 
@@ -52,6 +54,7 @@ source ~/.zsh_profile
 # === ALIASES ===
 
 alias lsa="ls -la"
+alias la="ls -la"
 alias lsl="ls -l"
 
 alias cdd="cd ~/Documents/"
