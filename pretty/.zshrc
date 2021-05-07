@@ -7,7 +7,7 @@
 # 
 #                                            ~ Adi
 
-export ZSH="$HOME/.oh-my-zsh"
+# export ZSH="$HOME/.oh-my-zsh"
 
 # ZSH_THEME="spaceship"
 
@@ -39,7 +39,7 @@ export LC_ALL=en_US.UTF-8
 
 # === SOURCES ===
 
-source $ZSH/oh-my-zsh.sh
+# source $ZSH/oh-my-zsh.sh
 source ~/.zsh_profile
 
 # source ~/.config/.purepower
