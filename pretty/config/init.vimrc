@@ -9,7 +9,7 @@ Plug 'scrooloose/nerdtree'
 
 " Tools
 " Plug 'tpope/vim-fugitive'
-" Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-commentary'
 " Plug 'mbbill/undotree'
 
 " Commands

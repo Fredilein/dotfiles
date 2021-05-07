@@ -26,12 +26,6 @@ nmap <silent> ]c :cnext<CR>
 nmap <silent> [C :cfirst<CR>
 nmap <silent> ]C :clast<CR>
 
-" " switch windows
-" map <C-h> <C-w>h
-" map <C-j> <C-w>j
-" map <C-k> <C-w>k
-" map <C-l> <C-w>l
-
 " move between display lines
 nnoremap k gk
 nnoremap gk k
@@ -107,15 +101,15 @@ nmap <Leader>L <Plug>(easymotion-overwin-line)
 
 " --- Coc ---
 
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
+" inoremap <silent><expr> <TAB>
+"       \ pumvisible() ? "\<C-n>" :
+"       \ <SID>check_back_space() ? "\<TAB>" :
+"       \ coc#refresh()
 
 " use <c-space>for trigger completion
 inoremap <silent><expr> <c-space> coc#refresh()
 
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+" inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
 

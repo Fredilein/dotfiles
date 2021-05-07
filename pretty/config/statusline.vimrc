@@ -1,3 +1,17 @@
+let g:lightline = {
+      \ 'colorscheme': 'challenger_deep',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'readonly', 'filename'],
+      \             [ 'modified' ] ],
+      \   'right': [ [ 'lineinfo' ],
+      \              [ 'percent' ],
+      \              [ 'fileformat', 'filetype' ] ]
+      \ },
+      \ }
+
+" Some old config, maybe use some git info later...
+
 " function! FileNameWithIcon() abort
 "   return winwidth(0) > 70  ? " " . WebDevIconsGetFileTypeSymbol() . ' ' . expand('%:t') : '' 
 " endfunction
@@ -52,8 +66,8 @@
 "   return "\uf42e" 
 " endfunction
 
-let g:lightline = {}
-let g:lightline.colorscheme = 'challenger_deep'
+" let g:lightline = {}
+" let g:lightline.colorscheme = 'challenger_deep'
 " let g:lightline.active = { 
 "       \ 'left': [ ['mode', 'readonly'], ['filename_with_icon', 'modified' ] ],
 "       \ 'right': [ ['lineinfo'], ['testing_status', 'status_diagnostic'], ['git_branch'] ]
