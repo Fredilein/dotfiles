@@ -16,7 +16,7 @@ Plug 'scrooloose/nerdtree'
 " " Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 " " Plug 'godlygeek/tabular'
 " Plug 'junegunn/vim-easy-align'
-" Plug 'christoomey/vim-tmux-navigator'
+Plug 'christoomey/vim-tmux-navigator'
 " Plug 'machakann/vim-sandwich'
 " Plug 'easymotion/vim-easymotion'
 " Plug 'dhruvasagar/vim-table-mode'
@@ -29,7 +29,7 @@ Plug 'scrooloose/nerdtree'
 " Optical
 " " Plug 'edkolev/tmuxline.vim'
 " " Plug 'vim-airline/vim-airline'
-" Plug 'itchyny/lightline.vim'
+Plug 'itchyny/lightline.vim'
 " " Plug 'vim-airline/vim-airline-themes'
 " Plug 'ryanoasis/vim-devicons'
 " Plug 'junegunn/goyo.vim'
@@ -43,7 +43,7 @@ Plug 'scrooloose/nerdtree'
 " Plug 'sonph/onehalf', {'rtp': 'vim/'}
 " Plug 'ayu-theme/ayu-vim'
 " Plug 'morhetz/gruvbox'
-" Plug 'challenger-deep-theme/vim', { 'name': 'challenger-deep' }
+Plug 'challenger-deep-theme/vim', { 'name': 'challenger-deep' }
 
 " Languages
 " Plug 'pangloss/vim-javascript'

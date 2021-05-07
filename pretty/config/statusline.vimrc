@@ -52,7 +52,7 @@
 "   return "\uf42e" 
 " endfunction
 
-" let g:lightline = {}
+let g:lightline = {}
 let g:lightline.colorscheme = 'challenger_deep'
 " let g:lightline.active = { 
 "       \ 'left': [ ['mode', 'readonly'], ['filename_with_icon', 'modified' ] ],
