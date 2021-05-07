@@ -33,7 +33,7 @@ ln -s $HOME/.dotfiles/pretty/config $HOME/.config/nvim/config;
 ln -s $HOME/.dotfiles/pretty/.tmux.conf $HOME;
 ln -s $HOME/.dotfiles/pretty/.bashrc $HOME;
 ln -s $HOME/.dotfiles/pretty/.zshrc $HOME;
-ln -s $HOME/.dotfiles/pretty/.alacritty.yml $HOME;
+ln -s $HOME/.dotfiles/pretty/linux/.alacritty.yml $HOME;
 
 echo "## install vim-plug for neovim";
 # sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
