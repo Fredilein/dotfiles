@@ -1,5 +1,12 @@
 # Dotfiles
 
+## Updated Version
+Below stuff is pretty outdated. Everything up-to-date and useable in macOS and Linux is in `pretty/`.
+
+Can use installation script to setup tmux, neovim and alacritty.
+
+**BACKUP YOUR CONFIG FILES FIRST, the script just deletes them lol**
+
 ![Screenshot](/img/config_screenshot.png)
 
 ![Screenshot](/img/touchbar_screenshot.png)
