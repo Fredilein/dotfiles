@@ -2,6 +2,13 @@ echo "############";
 echo "# LETS GOO #";
 echo "############";
 
+echo "OLD CONFIG FILES WILL BE DELETED !!!";
+echo "Those are \n\t- .vimrc, \n\t- .bashrc, \n\t- .zshrc, \n\t- .tmux.conf, \n\t- .alacritty.yml, \n\t- .config/nvim/init.vim, \n\t- .config/nvim/config/";
+
+# read command is different for zsh and bash so why even bother...
+echo "Sleeping (5): ABORT IF YOU WANT TO KEEP YOUR EXISTING CONFIG FILES"
+sleep 5
+
 
 echo "## update package repo";
 # sudo apt-get update && apt-get upgrade;
