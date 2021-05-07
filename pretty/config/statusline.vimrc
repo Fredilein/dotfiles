@@ -6,8 +6,11 @@ let g:lightline = {
       \             [ 'modified' ] ],
       \   'right': [ [ 'lineinfo' ],
       \              [ 'percent' ],
-      \              [ 'fileformat', 'filetype' ] ]
+      \              [ 'gitbranch', 'filetype' ] ]
       \ },
+      \ 'component_function': {
+      \   'gitbranch': 'FugitiveHead'
+      \ }
       \ }
 
 " Some old config, maybe use some git info later...
