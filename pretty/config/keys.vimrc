@@ -173,11 +173,11 @@ nmap <leader>i :Commits<CR>
 nmap <leader>v :Vista coc<CR>
 
 " --- vim-fugitive ---
-nmap <leader>gs :Gstatus<CR>
+nmap <leader>gs :Git<CR>
 nmap <leader>gp :Gpush<CR>
 nmap <leader>gl :Gpull<CR>
 nmap <leader>ge :Gedit<CR>
 nmap <leader>gd :Gdiffsplit<CR>
 nmap <leader>glg :Glog<CR>
 nmap <leader>ga :Gwrite<CR>
-nmap <leader>gc :Gcommit<CR>
+nmap <leader>gc :Git commit<CR>

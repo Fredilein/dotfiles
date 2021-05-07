@@ -8,7 +8,7 @@ Plug 'scrooloose/nerdtree'
 " Plug 'liuchengxu/vista.vim'
 
 " Tools
-" Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
 " Plug 'mbbill/undotree'
 
