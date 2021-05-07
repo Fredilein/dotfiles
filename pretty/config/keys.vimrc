@@ -173,7 +173,11 @@ nmap <leader>i :Commits<CR>
 nmap <leader>v :Vista coc<CR>
 
 " --- vim-fugitive ---
+<<<<<<< HEAD
 nmap <leader>gg :Git<CR>
+=======
+nmap <leader>gs :Git<CR>
+>>>>>>> f2ba8f3d4d43baccd13fdd0553f4ca20844ca8ff
 nmap <leader>gp :Git push<CR>
 nmap <leader>gl :Git pull<CR>
 nmap <leader>ge :Gedit<CR>
