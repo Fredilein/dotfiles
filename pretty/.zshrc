@@ -68,7 +68,7 @@ alias cdd="cd ~/Documents/"
 
 # alias comp="g++ -I /usr/local/include/eigen3/"
 
-# alias vim="nvim"
+alias vim="nvim"
 
 # alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
 
