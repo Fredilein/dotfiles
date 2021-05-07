@@ -6,8 +6,11 @@ let g:lightline = {
       \             [ 'modified' ] ],
       \   'right': [ [ 'lineinfo' ],
       \              [ 'percent' ],
-      \              [ 'fileformat', 'filetype' ] ]
+      \              [ 'gitbranch', 'filetype' ] ]
       \ },
+      \ 'component_function': {
+      \   'gitbranch': 'FugitiveHead'
+      \ }
       \ }
 
 " Some old config, maybe use some git info later...
@@ -44,13 +47,13 @@ let g:lightline = {
 "     return string(getcurpos()[2])
 " endfunction
 
-" function! Git_branch() abort
-"   if fugitive#head() !=# ''
-"     return fugitive#head() .  " " . "\ue702"
-"   else
-"     return "\uf468"
-"   endif
-" endfunction
+function! Git_branch() abort
+  if fugitive#head() !=# ''
+    return fugitive#head() .  " " . "\ue702"
+  else
+    return "\uf468"
+  endif
+endfunction
 
 " function! StatusDiagnostic() abort
 "   let info = get(b:, 'coc_diagnostic_info', {})
