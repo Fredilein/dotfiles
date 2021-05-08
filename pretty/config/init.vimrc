@@ -5,6 +5,8 @@ Plug 'scrooloose/nerdtree'
 " Plug '/usr/local/opt/fzf'	      " brew installation
 " Plug '~/.fzf'                         " git installation
 " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 " Plug 'liuchengxu/vista.vim'
 
 " Tools
