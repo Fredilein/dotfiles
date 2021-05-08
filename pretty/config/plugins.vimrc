@@ -1,3 +1,9 @@
+"
+" ===== plugins.vimrc =====
+"
+" Plugin specific settings go here
+"
+
 filetype plugin indent on
 
 

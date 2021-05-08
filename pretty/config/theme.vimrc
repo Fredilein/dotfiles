@@ -1,3 +1,9 @@
+"
+" ===== theme.vimrc =====
+"
+" Theme related settings go here
+"
+
 if has('nvim') || has('termguicolors')
   set termguicolors
 endif

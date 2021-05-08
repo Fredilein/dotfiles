@@ -7,6 +7,8 @@
 "  
 "                                                            ~ Adi
 
+" For better organisation, the vim configuration is split across files listed
+" below.
 
 source $HOME/.config/nvim/config/init.vimrc
 source $HOME/.config/nvim/config/general.vimrc

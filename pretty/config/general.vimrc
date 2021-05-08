@@ -1,3 +1,9 @@
+"
+" ===== general.vimrc =====
+"
+" Some general (neo)vim settings
+"
+
 syntax enable
 
 set number

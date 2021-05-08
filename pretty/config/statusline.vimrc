@@ -1,3 +1,10 @@
+"
+" ===== statusline.vimrc =====
+"
+" Settings for vim-lightline. Old (sophisticated but buggy) settings commented
+" below
+"
+
 let g:lightline = {
       \ 'colorscheme': 'challenger_deep',
       \ 'active': {

@@ -1,3 +1,9 @@
+"
+" ===== keys.vimrc =====
+"
+" All key mappings, default and plugin-specific
+"
+
 " leader key
 let mapleader = ","
 
