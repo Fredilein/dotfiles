@@ -1,3 +1,13 @@
+"     _               _      _                        _            
+"    (_)    _ _      (_)    | |_            __ __    (_)    _ __   
+"    | |   | ' \     | |    |  _|     _     \ V /    | |   | '  \  
+"   _|_|_  |_||_|   _|_|_   _\__|   _(_)_   _\_/_   _|_|_  |_|_|_| 
+" _|"""""|_|"""""|_|"""""|_|"""""|_|"""""|_|"""""|_|"""""|_|"""""| 
+" ``-0-0-'``-0-0-'``-0-0-'``-0-0-'``-0-0-'``-0-0-'``-0-0-'``-0-0-'
+"  
+"                                                            ~ Adi
+
+
 source $HOME/.config/nvim/config/init.vimrc
 source $HOME/.config/nvim/config/general.vimrc
 source $HOME/.config/nvim/config/plugins.vimrc

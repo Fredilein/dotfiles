@@ -1,4 +1,11 @@
-# Dotfiles
+```
+             _             _         __     _       _                    
+          __| |    ___    | |_      / _|   (_)     | |     ___     ___   
+    _    / _` |   / _ \   |  _|    |  _|   | |     | |    / -_)   (_-<   
+  _(_)_  \__,_|   \___/   _\__|   _|_|_   _|_|_   _|_|_   \___|   /__/_  
+_|"""""|_|"""""|_|"""""|_|"""""|_|"""""|_|"""""|_|"""""|_|"""""|_|"""""| 
+"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-' 
+```
 
 ## Updated Version
 Below stuff is pretty outdated. Everything up-to-date and useable in macOS and Linux is in `pretty/`.
@@ -6,6 +13,11 @@ Below stuff is pretty outdated. Everything up-to-date and useable in macOS and L
 Can use installation script to setup tmux, neovim and alacritty.
 
 **BACKUP YOUR CONFIG FILES FIRST, the script just deletes them lol**
+
+
+## Older stuff...
+
+> Screenshots aren't from the `pretty/` setup. Almost the same except those unnecessary chars in tmux line and lightline...
 
 ![Screenshot](/img/config_screenshot.png)
 
