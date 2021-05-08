@@ -95,54 +95,92 @@ nmap T <Plug>(easymotion-overwin-w)
 " nnoremap <leader>g :<C-u>Denite grep:. -no-empty -mode=normal<CR>
 " ==> Floating windows coming with nvim 0.4!
 
-
 " --- Coc ---
 
-" inoremap <silent><expr> <TAB>
-"       \ pumvisible() ? "\<C-n>" :
-"       \ <SID>check_back_space() ? "\<TAB>" :
-"       \ coc#refresh()
+" Use <c-space> to trigger completion.
+if has('nvim')
+  inoremap <silent><expr> <c-space> coc#refresh()
+else
+  inoremap <silent><expr> <c-@> coc#refresh()
+endif
 
-" use <c-space>for trigger completion
-inoremap <silent><expr> <c-space> coc#refresh()
+" Make <CR> auto-select the first completion item and notify coc.nvim to
+" format on enter, <cr> could be remapped by other vim plugin
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
-" inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+" Use `[g` and `]g` to navigate diagnostics
+" Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
-inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
-
-" Remap keys for gotos
+" GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
-" Use K to show documentation in preview window
+" Use K to show documentation in preview window.
 nnoremap <silent> K :call <SID>show_documentation()<CR>
+
 function! s:show_documentation()
-  if &filetype == 'vim'
+  if (index(['vim','help'], &filetype) >= 0)
     execute 'h '.expand('<cword>')
+  elseif (coc#rpc#ready())
+    call CocActionAsync('doHover')
   else
-    call CocAction('doHover')
+    execute '!' . &keywordprg . " " . expand('<cword>')
   endif
 endfunction
 
-" Format
-" vmap <leader>p  <Plug>(coc-format-selected)
-" nmap <leader>p  <Plug>(coc-format-selected)
 
-" Remap for rename current word
-nmap <leader>rn <Plug>(coc-rename)
+" --- Coc OLD ---
 
-" Remap for do codeAction of selected region, ex: `<leader>aap` for current paragraph
-vmap <leader>a  <Plug>(coc-codeaction-selected)
-nmap <leader>a  <Plug>(coc-codeaction-selected)
+" " inoremap <silent><expr> <TAB>
+" "       \ pumvisible() ? "\<C-n>" :
+" "       \ <SID>check_back_space() ? "\<TAB>" :
+" "       \ coc#refresh()
 
-" Remap for do codeAction of current line
-nmap <leader>ac  <Plug>(coc-codeaction)
-" Fix autofix problem of current line
-nmap <leader>qf  <Plug>(coc-fix-current)
+" " use <c-space>for trigger completion
+" inoremap <silent><expr> <c-space> coc#refresh()
 
-nmap <leader>p :CocCommand prettier.formatFile<CR>
+" " inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+" inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
+
+" " Remap keys for gotos
+" nmap <silent> gd <Plug>(coc-definition)
+" nmap <silent> gy <Plug>(coc-type-definition)
+" nmap <silent> gi <Plug>(coc-implementation)
+" nmap <silent> gr <Plug>(coc-references)
+
+" " Use K to show documentation in preview window
+" nnoremap <silent> K :call <SID>show_documentation()<CR>
+" function! s:show_documentation()
+"   if &filetype == 'vim'
+"     execute 'h '.expand('<cword>')
+"   else
+"     call CocAction('doHover')
+"   endif
+" endfunction
+
+" " Format
+" " vmap <leader>p  <Plug>(coc-format-selected)
+" " nmap <leader>p  <Plug>(coc-format-selected)
+
+" " Remap for rename current word
+" nmap <leader>rn <Plug>(coc-rename)
+
+" " Remap for do codeAction of selected region, ex: `<leader>aap` for current paragraph
+" vmap <leader>a  <Plug>(coc-codeaction-selected)
+" nmap <leader>a  <Plug>(coc-codeaction-selected)
+
+" " Remap for do codeAction of current line
+" nmap <leader>ac  <Plug>(coc-codeaction)
+" " Fix autofix problem of current line
+" nmap <leader>qf  <Plug>(coc-fix-current)
+
+" nmap <leader>p :CocCommand prettier.formatFile<CR>
 
 
 " --- undotree ---
@@ -174,7 +212,8 @@ nmap <leader>gg :Git<CR>
 nmap <leader>gp :Git push<CR>
 nmap <leader>gl :Git pull<CR>
 nmap <leader>ge :Gedit<CR>
-nmap <leader>gd :Gdiffsplit<CR>
+nmap <leader>gs :Gdiffsplit<CR>
+nmap <leader>gd :Git difftool<CR>
 nmap <leader>glg :Glog<CR>
 nmap <leader>ga :Gwrite<CR>
 nmap <leader>gc :Git commit<CR>

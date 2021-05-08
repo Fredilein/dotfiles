@@ -29,16 +29,6 @@ set shortmess+=c
 " always show signcolumns
 set signcolumn=yes
 
-" use <tab> for trigger completion and navigate to the next complete item
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~ '\s'
-endfunction
-
-let g:coc_snippet_next = '<tab>'
-
-autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
-
 augroup mygroup
   autocmd!
   " Setup formatexpr specified filetype(s).

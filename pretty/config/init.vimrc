@@ -27,6 +27,7 @@ Plug 'easymotion/vim-easymotion'
 " Plug 'honza/vim-snippets'
 " " Plug 'Shougo/denite.nvim'
 " Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Optical
 " " Plug 'edkolev/tmuxline.vim'
