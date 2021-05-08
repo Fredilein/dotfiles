@@ -19,8 +19,8 @@ Plug 'tpope/vim-commentary'
 " " Plug 'godlygeek/tabular'
 " Plug 'junegunn/vim-easy-align'
 Plug 'christoomey/vim-tmux-navigator'
-" Plug 'machakann/vim-sandwich'
-" Plug 'easymotion/vim-easymotion'
+Plug 'machakann/vim-sandwich'
+Plug 'easymotion/vim-easymotion'
 " Plug 'dhruvasagar/vim-table-mode'
 
 " Code Completion

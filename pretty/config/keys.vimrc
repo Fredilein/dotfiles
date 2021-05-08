@@ -74,16 +74,13 @@ nmap t <Plug>(easymotion-overwin-f)
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 
-" s{char}{char} to move to {char}{char}
-nmap T <Plug>(easymotion-overwin-f2)
-
 " Move to line
-map <Leader>L <Plug>(easymotion-bd-jk)
-nmap <Leader>L <Plug>(easymotion-overwin-line)
+" map <Leader>L <Plug>(easymotion-bd-jk)
+" nmap <Leader>L <Plug>(easymotion-overwin-line)
 
 " Move to word
-" map  <Leader>w <Plug>(easymotion-bd-w)
-" nmap <Leader>w <Plug>(easymotion-overwin-w)
+map T <Plug>(easymotion-bd-w)
+nmap T <Plug>(easymotion-overwin-w)
 
 
 " --- Denite ---
