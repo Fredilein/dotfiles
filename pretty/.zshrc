@@ -79,6 +79,8 @@ alias wttr="curl wttr.in/Zurich"
 
 alias sz="source .zshrc"
 
+# alias gcc="/usr/local/bin/gcc-11"
+
 # alias neovim="~/.run/nvim-osx64/bin/nvim"
 
 # alias b="buku --suggest"
@@ -146,6 +148,10 @@ export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
 
 # . $HOME/.run/z.sh
 
+source ./zsh-z.plugin.zsh
+autoload -U compinit && compinit
+zstyle ':completion:*' menu select
+
 
 # === AUTO COMPLETION ===
 
@@ -159,17 +165,17 @@ export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-# __conda_setup="$('/Users/adi/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-# if [ $? -eq 0 ]; then
-#     eval "$__conda_setup"
-# else
-#     if [ -f "/Users/adi/opt/miniconda3/etc/profile.d/conda.sh" ]; then
-#         . "/Users/adi/opt/miniconda3/etc/profile.d/conda.sh"
-#     else
-#         export PATH="/Users/adi/opt/miniconda3/bin:$PATH"
-#     fi
-# fi
-# unset __conda_setup
+__conda_setup="$('/Users/adi/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/adi/opt/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/adi/opt/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/adi/opt/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
 # <<< conda initialize <<<
 
 

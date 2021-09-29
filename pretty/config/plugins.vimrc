@@ -17,14 +17,12 @@ let g:user_emmet_settings = {
   \}
 
 
-
 " --- easymotion ---
 
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
 
 " Turn on case-insensitive feature
 let g:EasyMotion_smartcase = 1
-
 
 
 " --- Coc --- 
@@ -43,22 +41,11 @@ augroup mygroup
   autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
 augroup end
 
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
-" --- previm ---
-
-let g:previm_open_cmd = 'open -a Safari'
-
-
-" --- vim-table-mode ---
-
-let g:table_mode_corner='|'
-
-
-" --- vim-wiki ---
-let g:vimwiki_list = [{'path': '~/Documents/Sec/Notes',
-                      \ 'syntax': 'markdown', 'ext': '.md'}]
 
 " --- vim-fzf ---
+
 function! s:fzf_statusline()
   " Override statusline as you like
   " Doesn't really work tho lol
@@ -105,8 +92,3 @@ function! FloatingFZF()
 
   call nvim_open_win(buf, v:true, opts)
 endfunction
-
-" --- vim-markdown ---
-let g:vim_markdown_math = 1
-set conceallevel=2
-let g:vim_markdown_new_list_item_indent = 0

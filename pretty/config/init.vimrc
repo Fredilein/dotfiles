@@ -21,7 +21,6 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'machakann/vim-sandwich'
 Plug 'easymotion/vim-easymotion'
 " Plug 'junegunn/vim-easy-align'
-" Plug 'dhruvasagar/vim-table-mode'
 
 " Code Completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -33,27 +32,10 @@ Plug 'psliwka/vim-smoothie'
 
 " Themes
 Plug 'challenger-deep-theme/vim', { 'name': 'challenger-deep' }
-" Plug 'cocopon/iceberg.vim'
-" Plug 'nightsense/carbonized'
-" Plug 'rakr/vim-two-firewatch'
-" Plug 'rakr/vim-togglebg'
-" Plug 'sonph/onehalf', {'rtp': 'vim/'}
-" Plug 'ayu-theme/ayu-vim'
-" Plug 'morhetz/gruvbox'
 
 " Languages
-" Plug 'pangloss/vim-javascript'
-" Plug 'mxw/vim-jsx'
-" Plug 'mattn/emmet-vim'
-" Plug 'rust-lang/rust.vim'
-" Plug 'shime/vim-livedown'
-" Plug 'plasticboy/vim-markdown'
-" Plug 'posva/vim-vue'
-" Plug 'wavded/vim-stylus'
-" Plug 'previm/previm'
-" Plug 'leafgarland/typescript-vim'
-" Plug 'peitalin/vim-jsx-typescript'
-
-" Plug 'vimwiki/vimwiki'
+Plug 'evanleck/vim-svelte', {'branch': 'main'}
+Plug 'pangloss/vim-javascript'
+Plug 'mattn/emmet-vim'
 
 call plug#end()
