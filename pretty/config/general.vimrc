@@ -61,3 +61,5 @@ endif
 
 " Language specific settings
 autocmd Filetype py setlocal expandtab shiftwidth=4 softtabstop=4
+
+let g:go_fmt_experimental = 1

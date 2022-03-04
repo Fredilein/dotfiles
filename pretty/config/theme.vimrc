@@ -19,6 +19,7 @@ colorscheme challenger_deep
 " hi DiffDelete guibg=#ff5458 guifg=black
 " hi DiffChange guibg=#ffb378 guifg=black
 " hi DiffText guibg=#ffe9aa guifg=black
+hi Folded guibg=#100E23 guifg=grey
 
 " --> ayu
 " let g:airline_theme='ayu'

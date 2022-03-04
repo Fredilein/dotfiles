@@ -9,7 +9,7 @@ let g:lightline = {
       \ 'colorscheme': 'challenger_deep',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'readonly', 'filename'],
+      \             [ 'readonly', 'filename_with_parent'],
       \             [ 'modified', 'cocstatus' ] ],
       \   'right': [ [ 'lineinfo' ],
       \              [ 'percent' ],
@@ -17,7 +17,8 @@ let g:lightline = {
       \ },
       \ 'component_function': {
       \   'gitbranch': 'FugitiveHead',
-      \   'cocstatus': 'coc#status'
+      \   'cocstatus': 'coc#status',
+      \   'filename_with_parent': 'FileNameWithParent'
       \ }
       \ }
 
@@ -27,13 +28,13 @@ let g:lightline = {
 "   return winwidth(0) > 70  ? " " . WebDevIconsGetFileTypeSymbol() . ' ' . expand('%:t') : '' 
 " endfunction
 
-" function! FileNameWithParent(f) abort
-"   if expand('%:t') ==# ''
-"     return expand('%:p:h:t')
-"   else
-"     return expand('%:p:h:t') . "/" . expand("%:t")
-"   endif
-" endfunction
+function! FileNameWithParent() abort
+  if expand('%:t') ==# ''
+    return expand('%:p:h:t')
+  else
+    return expand('%:p:h:t') . "/" . expand("%:t")
+  endif
+endfunction
 
 " function! Line_num() abort
 "   return string(line('.'))

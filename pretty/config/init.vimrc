@@ -37,5 +37,9 @@ Plug 'challenger-deep-theme/vim', { 'name': 'challenger-deep' }
 Plug 'evanleck/vim-svelte', {'branch': 'main'}
 Plug 'pangloss/vim-javascript'
 Plug 'mattn/emmet-vim'
+Plug 'darrikonn/vim-gofmt'
+" Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
+Plug 'shime/vim-livedown'
 
 call plug#end()
