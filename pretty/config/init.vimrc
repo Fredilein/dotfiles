@@ -34,8 +34,8 @@ Plug 'psliwka/vim-smoothie'
 Plug 'challenger-deep-theme/vim', { 'name': 'challenger-deep' }
 
 " Languages
-Plug 'evanleck/vim-svelte', {'branch': 'main'}
-Plug 'pangloss/vim-javascript'
+" Plug 'evanleck/vim-svelte', {'branch': 'main'}
+" Plug 'pangloss/vim-javascript'
 Plug 'mattn/emmet-vim'
 Plug 'darrikonn/vim-gofmt'
 " Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }

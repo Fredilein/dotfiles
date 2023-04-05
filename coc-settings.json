@@ -1,0 +1,17 @@
+{
+  "python.pipenvPath": "/usr/local/bin/pipenv",
+  "python.condaPath": "/miniconda3/bin/conda",
+  "python.jediEnabled": true,
+  "java.errors.incompleteClasspath.severity": "ignore",
+  "languageserver": {
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+      "filetypes": ["go"],
+      "initializationOptions": {
+        "usePlaceholders": true
+      }
+    }
+  },
+  "svelte.enable-ts-plugin": true
+}

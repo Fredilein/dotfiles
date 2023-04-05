@@ -148,7 +148,6 @@ export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
 
 # . $HOME/.run/z.sh
 
-source ./zsh-z.plugin.zsh
 autoload -U compinit && compinit
 zstyle ':completion:*' menu select
 
@@ -179,4 +178,12 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 
-# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# The next line updates PATH for the Google Cloud SDK.
+# if [ -f '/opt/google-cloud-sdk/path.zsh.inc' ]; then . '/opt/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+# if [ -f '/opt/google-cloud-sdk/completion.zsh.inc' ]; then . '/opt/google-cloud-sdk/completion.zsh.inc'; fi
+
+export KOPS_STATE_STORE=gs://cca-eth-2022-group-40-zangaa
