@@ -14,6 +14,7 @@
 
 
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
 
 
 export LC_ALL=en_US.UTF-8
@@ -71,7 +72,7 @@ alias cdd="cd ~/Documents/"
 
 alias vim="nvim"
 
-# alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
+alias ff="fzf --preview 'bat --style=numbers --color=always {}' --bind 'enter:become(nvim {})'"
 
 # alias gritt="/Users/adi/Documents/Code/Rust/grit/target/debug/grit"
 
@@ -186,4 +187,5 @@ unset __conda_setup
 # The next line enables shell command completion for gcloud.
 # if [ -f '/opt/google-cloud-sdk/completion.zsh.inc' ]; then . '/opt/google-cloud-sdk/completion.zsh.inc'; fi
 
-export KOPS_STATE_STORE=gs://cca-eth-2022-group-40-zangaa
+
+export BAT_THEME="Dracula"
