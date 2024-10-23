@@ -22,7 +22,7 @@ eval "$(zoxide init zsh)"
 # === ALIASES ===
 
 alias lsa="ls -la"
-alias la="ls -la"
+alias la="ls -lah"
 alias lsl="ls -l"
 
 alias cdd="cd ~/Documents/"
@@ -79,3 +79,4 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+export PATH="/usr/local/sbin:$PATH"
