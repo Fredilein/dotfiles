@@ -25,6 +25,9 @@ alias lsa="ls -la"
 alias la="ls -lah"
 alias lsl="ls -l"
 
+alias tn="tmux new -s"
+alias ta="tmux attach -t"
+
 alias cdd="cd ~/Documents/"
 
 alias vim="nvim"
