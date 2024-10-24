@@ -46,6 +46,11 @@ local plugins = {
       require("better_escape").setup()
     end,
   },
+  {
+    'mrcjkb/rustaceanvim',
+    version = '^5', -- Recommended
+    lazy = false, -- This plugin is already lazy
+  }
 
   -- To make a plugin not be loaded
   -- {
