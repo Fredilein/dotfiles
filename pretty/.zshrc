@@ -25,8 +25,10 @@ alias lsa="ls -la"
 alias la="ls -lah"
 alias lsl="ls -l"
 
+alias tl="tmux ls"
 alias tn="tmux new -s"
 alias ta="tmux attach -t"
+alias tk="tmux kill-session -t"
 
 alias cdd="cd ~/Documents/"
 

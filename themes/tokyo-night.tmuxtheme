@@ -38,7 +38,7 @@ set -g status-right "#[fg=$tmux_status_bg_1,bg=$tmux_status_bg]\uE0B6#[fg=$tmux_
 
 # Window status
 set -g window-status-format "#[default] #I #W  #[default]"
-set -g window-status-current-format "#[fg=$tmux_status_bg_1,bg=$tmux_status_bg]\uE0B6#[fg=$tmux_current_title_fg,bg=$tmux_status_bg_1,bold]#I#[fg=$tmux_current_title_fg,bg=$tmux_status_bg_1,bold] #W#[fg=$tmux_status_bg_1,bg=$tmux_status_bg]\uE0B4 #[default]"
+set -g window-status-current-format "#[fg=$tmux_status_bg_1,bg=$tmux_status_bg]\uE0B6#[fg=$tmux_current_title_fg,bg=$tmux_status_bg_1,bold]#I#[fg=$tmux_current_title_fg,bg=$tmux_status_bg_1,bold] #W#F#[fg=$tmux_status_bg_1,bg=$tmux_status_bg]\uE0B4 #[default]"
 
 # Current window status
 set -g window-status-current-style none
